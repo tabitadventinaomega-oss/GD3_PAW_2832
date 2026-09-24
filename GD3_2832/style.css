@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 
-.bio {
+p.bio {
   color: #444;
   font-style: italic;
 }
