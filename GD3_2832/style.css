@@ -7,3 +7,13 @@ h1 {
   color: navy;
   text-align: center;
 }
+
+#judul {
+  color: green;
+  text-align: center;
+}
+
+.bio {
+  color: #444;
+  font-style: italic;
+}
