@@ -13,7 +13,15 @@ h1 {
   text-align: center;
 }
 
-.bio {
+p.bio {
   color: #444;
   font-style: italic;
+}
+
+.example-container {
+  margin: 8px;
+  border: 8px solid red;
+  padding: 8px;
+  width: 100px;
+  height: 100px;
 }
