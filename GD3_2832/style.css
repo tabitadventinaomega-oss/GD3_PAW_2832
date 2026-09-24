@@ -25,3 +25,10 @@ p.bio {
   width: 100px;
   height: 100px;
 }
+
+.kontainer-profil {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
