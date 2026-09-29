@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulir</title>
+    <link rel="stylsheet" href="style.css" />
+    <a href="profil.html"></a>
+  </head>
+  <body>
+    <form action="proses.php" method="post">
+      <div>
+        <label for="namamhs">Nama Mahasiswa</label>
+        <input type="text" id="namamhs" name="namamhs" />
+      </div>
+
+      <div>
+        <label>Jenis Kelamin</label>
+        <input type="radio" id="laki" name="jk" value="Laki-laki" />
+        <label for="laki">Laki-laki</label>
+
+        <input type="radio" id="perempuam" name="jk" value="Perempuan" />
+        <label for="perempuan">Perempuan</label>
+      </div>
+
+      <div>
+        <label>Program Studi</label>
+        <select id="prodi" name="prdi">
+          <option>Teknik Industri</option>
+          <option>Informatika</option>
+          <option>Sistem Informasi</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="email">Alamat Email</label>
+        <input type="text" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="alasan">Alasan Mendaftar</label>
+        <textarea id="alasan" name="alasan"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" name="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
