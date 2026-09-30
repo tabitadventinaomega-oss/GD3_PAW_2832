@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>Halaman Interaktif Saya</title>
     <link rel="stylesheet" hre="style.css" />
-    <a href="profil.html">Profil</a>
-    <a href="form.html">Form</a>
+    <a href="profil.html" onclick="navigasi(event, this)">Profil</a>
+    <a href="form.html" onclick="navigasi(event, this)">Form</a>
   </head>
 
   <body>
@@ -40,6 +40,17 @@
         const hasil = angka * angka;
 
         document.getElementById("hasil").innerHTML = "Hasil kuadrat: " + hasil;
+      }
+
+      function navigasi(event, element) {
+        event.preventDefault();
+
+        const yakin = confirm("Apakah Anda yakin ingin pindah halaman?");
+
+        if (yakin) {
+          console.log("Navigasi ke: ", element.href);
+          window.location.href = element.href;
+        }
       }
     </script>
 

@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <title>Formulir</title>
     <link rel="stylsheet" href="style.css" />
-    <a href="profil.html">Profil</a>
-    <a href="interaktif.html">Halaman Interaktif</a>
+    <a href="profil.html" onclick="navigasi(event, this)">Profil</a>
+    <a href="interaktif.html" onclick="navigasi(event, this)"
+      >Halaman Interaktif</a
+    >
   </head>
   <body>
+    <script>
+      function navigasi(event, element) {
+        event.preventDefault();
+
+        const yakin = confirm("Apakah Anda yakin ingin pindah halaman?");
+
+        if (yakin) {
+          console.log("Navigasi ke: ", element.href);
+          window.location.href = element.href;
+        }
+      }
+    </script>
+
     <form action="proses.php" method="post">
       <div>
         <label for="namamhs">Nama Mahasiswa</label>
