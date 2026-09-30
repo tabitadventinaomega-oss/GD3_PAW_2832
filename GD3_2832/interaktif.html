@@ -34,6 +34,13 @@
           alert("Halo, " + nama + "!");
         }
       }
+
+      function hitungKuadrat() {
+        const angka = document.getElementById("angka").value;
+        const hasil = angka * angka;
+
+        document.getElementById("hasil").innerHTML = "Hasil kuadrat: " + hasil;
+      }
     </script>
 
     <p id="teks">Teks ini bisa berubah!!</p>
@@ -41,5 +48,13 @@
 
     <input type="text" id="inputNama" />
     <button onclick="tampilkanNama()">Tampilkan</button>
+
+    <h2>Hitung Kuadrat</h2>
+
+    <label for="angka">Masukkan angka:</label>
+    <input type="number" id="angka" />
+
+    <button onclick="hitungKuadrat()">Hitung</button>
+    <p id="hasil"></p>
   </body>
 </html>
