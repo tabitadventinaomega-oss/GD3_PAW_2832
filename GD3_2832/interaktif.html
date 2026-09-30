@@ -14,5 +14,12 @@
       return "Halo, " + nama + "!";
     }
     console.log(sapa("Tabita"));
+    function ubahBiru() {
+      const teks = document.getElementById("teks");
+      teks.style.color = "blue";
+    }
   </script>
+
+  <p id="teks">Teks ini bisa berubah!!</p>
+  <button onclick="ubahBiru()">Ubah ke Biru</button>
 </body>
