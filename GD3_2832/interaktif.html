@@ -10,16 +10,30 @@
     const judul = document.getElementById("judulHalaman");
     judul.style.color = "red";
     console.log(judul.innerHTML);
+
     function sapa(nama) {
       return "Halo, " + nama + "!";
     }
     console.log(sapa("Tabita"));
+
     function ubahBiru() {
       const teks = document.getElementById("teks");
       teks.style.color = "blue";
+    }
+
+    function tampilkanNama() {
+      const nama = document.getElementById("inputNama").value;
+      if (nama == "") {
+        alert("Silahkan isi nama dulu.");
+      } else {
+        alert("Halo, " + nama + "!");
+      }
     }
   </script>
 
   <p id="teks">Teks ini bisa berubah!!</p>
   <button onclick="ubahBiru()">Ubah ke Biru</button>
+
+  <input type="text" id="inputNama" />
+  <button onclick="tampilkanNama()">Tampilkan</button>
 </body>
